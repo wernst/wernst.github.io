@@ -1,77 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
+    <head>
+        <!-- <meta charset='utf-8'> -->
+        <link href='app.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div id='content'>
+            <div>This site is under construction! Please read <a href='about.html'>About Me</a> for a quick bio and come back soon for content.</div>
+            <button onclick='setConstrucitonGif()''>Change Technical Difficulties View</button>
+        </div>
+        <img id='construction-gif'></img>
+        <script>
+            const constructionGifs = [
+                'assets/techdif0.jpg',
+                'assets/techdif1.gif',
+                'assets/techdif2.webp',
+                'assets/techdif3.webp',
+                'assets/techdif4.webp'
+            ];
 
-<head>
+            function setConstrucitonGif() {
+                const n = constructionGifs.length;
+                const i = Math.floor(Math.random() * n);
+                document.getElementById('construction-gif').src = constructionGifs[i];
+            }
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-
-    <title>Will Ernst</title>
-
-    <!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link href="full.css" rel="stylesheet">
-</head>
-<body>
-
-<div class="nb"></div>
-<!-- Header -->
-<a name="about"></a>
-<div class="intro-header">
-	<div class="container">
-
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="intro-message">
-					<h1>Will Ernst</h1>
-					<h3>My Homepage</h3>
-					<hr class="intro-divider">
-					<ul class="list-inline intro-social-buttons">
-						<li>
-							<a href="https://github.com/wernst" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/will-ernst-71557297" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-						</li>
-						<li>
-							<a href="Ernst_Resume_ws.pdf" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Resume</span></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<!-- /.container -->
-
-</div>
-<!-- /.intro-header -->
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script>
-$(document).ready(function(){ $('.nb').load("nav.html"); });
-</script>
-
-
-<!-- Bootstrap Core JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-100071962-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</body>
+            setConstrucitonGif();
+        </script> 
+    </body>
 </html>

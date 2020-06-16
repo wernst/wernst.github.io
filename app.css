@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+#content {
+    margin: 8px;
+}
+
+#construction-gif {
+    background-size:cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
